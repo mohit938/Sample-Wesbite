@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <script>
+            function check()
+            {
+                document.getElementById("f1").innerHTML=document.myform.name1.value;
+                 document.getElementById("f2").innerHTML=document.myform.name2.value;
+                 document.getElementById("f3").innerHTML=document.myform.name3.value;
+                document.getElementById("f4").innerHTML=document.myform.contact.value;
+                document.getElementById("f5").innerHTML=document.myform.email.value;
+                document.getElementById("f6").innerHTML=document.myform.address.value;
+                document.getElementById("f7").innerHTML=document.myform.favourite.value;
+
+            }
+        </script>
+        
+
+    </head>
+    <nav>
+        <ul>
+            <li><a href="LAB_MANUAL_3.html">Home</a></li>
+            <li><a href="video_3.html">Video</a></li>
+            <li><a href="audio.html">Audio</a></li>
+            <li><a href="contact_us.html">Contact us</a></li>
+            <li><a href="graphics.html">Graphics</a></li>
+        </ul>
+    </nav>
+    <body>
+        <form name="myform">
+           First Name :<input type="text" name="name1" value="Mohit" placeholder="Enter the First name"> 
+           Middle Name: <input type="text" name="name2" value="Kumar" placeholder="Enter the Middle name"> 
+           Last Name :<input type="text"name="name3" value="Sharma" placeholder="Enter the Last name"><br>
+            Contact Number : <input type="text" name="contact" value="9879733467" placeholder="Enter the contact number"><br>
+            E-mail id : <input type="text" name="email"value="ms690310@gmail.com" placeholder="Enter the email-id"><br>
+            Address : <input type="text" name="address" value="Surat" placeholder="Enter the address"><br>
+            <select name="favourite">
+                <option value=Red>Red</option>
+                <option value=Blue>Blue</option>
+                <option value=Green>Green</option>
+                <option value=Yellow>Yellow</option>
+            </select>
+            <p>
+                <input type="submit" onclick="check(); return false"></p>
+    </form>
+    <p id="f1"></p>
+    <p id="f2"></p>
+    <p id="f3"></p>
+    <p id="f4"></p>1
+    <p id="f5"></p>
+    <p id="f6"></p>
+    <p id="f7"></p>
+
+
+    </body>
+
+</html>
